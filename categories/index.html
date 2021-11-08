@@ -17,15 +17,18 @@
   
   <title>categories | winter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="animation，动漫, 国漫">
+  <meta name="description" content="&amp;lt;% if (post.categories &amp;amp;&amp;amp; post.categories.length){ %&amp;gt;  &amp;#8226;    &amp;lt;%- list_categories(post.categories, {      show_count: false,      class: ‘article-category’,      style: ‘none’,">
+<meta name="keywords" content="animation，动漫, 国漫">
 <meta property="og:type" content="website">
 <meta property="og:title" content="categories">
 <meta property="og:url" content="https://w.venuslight.site/categories/index.html">
 <meta property="og:site_name" content="winter">
+<meta property="og:description" content="&amp;lt;% if (post.categories &amp;amp;&amp;amp; post.categories.length){ %&amp;gt;  &amp;#8226;    &amp;lt;%- list_categories(post.categories, {      show_count: false,      class: ‘article-category’,      style: ‘none’,">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-11-08T01:45:26.824Z">
+<meta property="og:updated_time" content="2021-11-08T01:48:08.974Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
+<meta name="twitter:description" content="&amp;lt;% if (post.categories &amp;amp;&amp;amp; post.categories.length){ %&amp;gt;  &amp;#8226;    &amp;lt;%- list_categories(post.categories, {      show_count: false,      class: ‘article-category’,      style: ‘none’,">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -110,7 +113,8 @@
 
     <div class="entry-content">
       
-        
+        <p>&lt;% if (post.categories &amp;&amp; post.categories.length){ %&gt;<br>  <span class="article-delim">&#8226;</span><br>  <div class="article-category"><br>  &lt;%- list_categories(post.categories, {<br>      show_count: false,<br>      class: ‘article-category’,<br>      style: ‘none’,<br>      separator: ‘, ‘<br>    }) %&gt;<br>  </div><br>&lt;% } %&gt;</p>
+
       
     </div><!-- .entry-content -->
 
