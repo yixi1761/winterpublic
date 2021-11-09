@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yixi1761/comments/winter/猫眼/maoyansanjiemei14.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yixi1761/comments/winter/猫眼/p866357984.webp">
-<meta property="og:updated_time" content="2021-11-09T01:47:08.751Z">
+<meta property="og:updated_time" content="2021-11-09T01:58:31.880Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="猫眼">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;也是中学时代喜欢的一部。当时没太多时间看完，大概后来也没有补。三姐妹和憨警员的日常。大姐成熟知性，二姐美丽大方，小妹可爱。其实每次行动都有些担心会暴露身份，幸好内海俊夫不够精明。片尾曲很好听，还用当年流行的复读机录了下来。似乎ED的画面是紧身衣的黑影，让人遐想的性感裸体。大概还是属于怀念过往的安逸日常。阳光灿烂如昔，柔风轻轻如昔，宁静的世界。">
@@ -94,7 +94,7 @@
             
             <a href="/日漫/猫眼/#comments" class="leave-reply">Reply</a>
             
-            <a href="javascript:void(0);" data-url="https://w.venuslight.site/日漫/猫眼/" data-id="ckvrfo4m700b55gzg5lo4gj0i" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://w.venuslight.site/日漫/猫眼/" data-id="ckvrg2s6y00ai6qzgcngzvc9f" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -309,23 +309,15 @@
     </tr>
     </table>
 
-    <span id="htmer_time">  
-        <script>      
-            function secondToDate(second) {
-               if (!second){return 0;}          
-                   var time = new Array(0, 0, 0, 0, 0);
-                   if (second >= 365 * 24 * 3600) {                       
-                        time[0] = parseInt(second / (365 * 24 * 3600));
-                        second %= 365 * 24 * 3600; }
-                          if (second >= 24 * 3600) {
-                           time[1] = parseInt(second / (24 * 3600));
-                                         second %= 24 * 3600;          } 
-                                    if (second >= 3600) {
-                                             time[2] = parseInt(second / 3600);
-                                             second %= 3600;          }          if (second >= 60) {              time[3] = parseInt(second / 60);              second %= 60;          }          if (second > 0) {              time[4] = second;          }          return time;      }</script><script type="text/javascript" language="javascript">      function setTime() {          var create_time = Math.round(new Date(Date.UTC(2016, 08, 08, 10, 11, 12)).getTime() / 1000);          var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);          currentTime = secondToDate((timestamp - create_time));          currentTimeHtml = '本站已安全运行：' + currentTime[0] + '年' + currentTime[1] + '天'                  + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]                  + '秒';          document.getElementById("htmer_time").innerHTML = currentTimeHtml;      }    setInterval(setTime, 1000);</script>
-
-<script type="text/javascript">var timer = null,      divText = document.getElementById("clock");      showTime();      timer = setInterval(showTime,1000);function showTime(){       var today = new Date();         var date = today.getDate();        var day = today.getDay();        var month = today.getMonth()+1;        var year = today.getFullYear();        var hour= addZero(today.getHours());        var min = addZero(today.getMinutes());        var sec = addZero(today.getSeconds());        var week="";            if (true) {};                                   if (day==0) week='星期日';        if (day==1) week='星期一';        if (day==2) week='星期二';        if (day==3) week='星期三';        if (day==4) week='星期四';        if (day==5) week='星期五';        if (day==6) week='星期六';        divText.innerHTML = "当前时间："+year+"年"+month+"月"+date+"日 "+ week +" "+"("+hour + ":"+ min + ":"+sec +")";}function addZero(num){      if (num <= 9) {          return "0"+num;      }else {          return num;      }}
-</footer>
+    <span id="showDays"></span>
+<script>
+    var birthDay = new Date("04/28/2015");  // 这里填写网站第一次运行日期
+    var now = new Date();
+    var duration = now.getTime() - birthDay.getTime(); 
+    var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+    document.getElementById("showDays").innerHTML = "| 本站已安全运行"+total+"天"; //这里就是总运行天数
+</script>
+    </footer>
     <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
 
 <script src="/js/jquery-3.3.1.min.js"></script>
