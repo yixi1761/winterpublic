@@ -166,7 +166,7 @@
   <!-- 多说评论框 end -->
   <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
   <!-- <script type="text/javascript">
-  var duoshuoQuery = {short_name:'valine'};
+  var duoshuoQuery = {short_name:'waline'};
     (function() {
 	  var ds = document.createElement('script');
 	  ds.type = 'text/javascript';ds.async = true;
@@ -178,6 +178,7 @@
   </script> -->
   <!-- 多说公共JS代码 end -->
 
+ <!-- 以下使用valine~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!-- <script src='https://justap.coding.net/p/web/d/comments/git/raw/master/JS/Valine.min.js'></script> -->
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <div id="vcomments"></div>
@@ -220,6 +221,26 @@
 </section>
 
 
+
+<!-- 以下使用waline，deta部署，deta base存储 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~·~~ -->
+
+<!-- 样式文件 -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+/>
+<!-- waline评论框 start -->
+  <div id="waline"></div>
+<!-- waline评论框 end -->
+<!-- 脚本文件 -->
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+  init({
+    el: '#waline',
+    serverURL: 'https://wa.venuslight.site',
+  });
+</script>
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
   
