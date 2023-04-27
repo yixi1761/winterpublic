@@ -131,6 +131,11 @@
   <span class="article-delim">&#8226;</span>
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/动作/">动作</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/友情/">友情</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/怀念/">怀念</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
 
+    <!-- data-path 将作为查询条件 -->
+    <div>
+      当前页共有<span  class="waline-comment-count"  data-path="/guide/client/count.html"/>条评论。
+    </div>
+
     </footer>
 </article>
 
@@ -152,26 +157,9 @@
 
 
 <section id="comments">
-  <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="post-大剑" data-title="大剑" data-url="https://w.venuslight.site/日漫dark/大剑/"></div>
-  <!-- 多说评论框 end -->
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-  <!-- <script type="text/javascript">
-  var duoshuoQuery = {short_name:'waline'};
-    (function() {
-	  var ds = document.createElement('script');
-	  ds.type = 'text/javascript';ds.async = true;
-	  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	  ds.charset = 'UTF-8';
-	  (document.getElementsByTagName('head')[0]
-	   || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script> -->
-  <!-- 多说公共JS代码 end -->
-
+ 
  <!-- 以下使用valine~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- <script src='https://justap.coding.net/p/web/d/comments/git/raw/master/JS/Valine.min.js'></script> -->
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <div id="vcomments"></div>
     <script>
         new Valine({
@@ -208,30 +196,31 @@
               // ... 更多表情
             }
         })
-    </script>
-</section>
-
-
+    </script>  -->
 
 <!-- 以下使用waline，deta部署，deta base存储 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~·~~ -->
 
-<!-- 样式文件 -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@waline/client@v2/dist/waline.css"
-/>
+  href="https://unpkg.com/@waline/client@v2/dist/waline.css"    />
+
 <!-- waline评论框 start -->
   <div id="waline"></div>
 <!-- waline评论框 end -->
-<!-- 脚本文件 -->
+
 <script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-
   init({
     el: '#waline',
     serverURL: 'https://wa.venuslight.site',
   });
 </script>
+
+</section>
+
+
+
+
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
   
